@@ -30,6 +30,7 @@ public class LineFilter {
 				}
 				
 				map.put(i, data.size());
+				br.close();
 			} catch(IOException e) {
 				continue;
 			}
