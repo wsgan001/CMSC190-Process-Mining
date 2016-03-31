@@ -13,10 +13,10 @@ public class LineFilter {
 		ArrayList<String> data = new ArrayList<String>();
 		HashMap<Integer, Integer> map = new HashMap<Integer, Integer>();
 		
-		String folder_name = "2016 01 (JANUARY)";
-		int year = 2016;
-		int month = 1;
-		String output_filename = "15.csv";
+		String folder_name = "2014 12 (DECEMBER)";
+		int year = 2014;
+		int month = 12;
+		String output_filename = "02.csv";
 		
 		for(int i = 1; i<=31; i++) {
 			try {
