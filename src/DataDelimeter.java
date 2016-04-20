@@ -9,7 +9,13 @@ import java.util.Arrays;
 
 public class DataDelimeter {
 	public DataDelimeter() throws IOException {
-		ArrayList<String> processes = new ArrayList<String>(Arrays.asList("get_basic_student_info","update_role","get_waitlisted","enlist_with_nstp_filter","admin_update_password","get_student_info","retrieve_all_module","send_problem","has_finalized","cancel_waitlist","waitlist_with_nstp_filter","create_announcement","get_roles","finalize","login","get_degrees","get_curriculums","toggle_site_status","waitlist","add_recommended_courses","enlist","search_course_offerings","update_email","get_recommended_courses","get_classlist","add_student","is_straggler","retrieve_menu_by_id","change_allowed_units","add_slot_up_waitlist","retrieve_all_menu","search_student","get_student_problems","toggle_straggler","get_reserved","cancel_corequisite","get_problems","get_course_offerings","get_colleges","get_checklist","cancel_slot","create_student_account","swap_section_with_nstp_filter","change_role","logout","get_ps_form","get_waitlisted_courses","add_role","get_section_info"));
+		ArrayList<String> processes = new ArrayList<String>(Arrays.asList("get_basic_student_info","update_role","get_waitlisted","enlist_with_nstp_filter","admin_update_password","get_student_info",
+																		  "retrieve_all_module","send_problem","has_finalized","cancel_waitlist","waitlist_with_nstp_filter","create_announcement","get_roles",
+																		  "finalize","login","get_degrees","get_curriculums","toggle_site_status","waitlist","add_recommended_courses","enlist","search_course_offerings",
+																		  "update_email","get_recommended_courses","get_classlist","add_student","is_straggler","retrieve_menu_by_id","change_allowed_units",
+																		  "add_slot_up_waitlist","retrieve_all_menu","search_student","get_student_problems","toggle_straggler","get_reserved","cancel_corequisite",
+																		  "get_problems","get_course_offerings","get_colleges","get_checklist","cancel_slot","create_student_account","swap_section_with_nstp_filter",
+																		  "change_role","logout","get_ps_form","get_waitlisted_courses","add_role","get_section_info"));
 		
 		for(int i = 1; i<=15; i++) {
 			ArrayList<String> data = new ArrayList<String>();
@@ -20,29 +26,19 @@ public class DataDelimeter {
 	 		
 			BufferedReader br = new BufferedReader(new FileReader(file_path));
 			
-			String line = null;
-			int line_number = 1;
-						
+			String line = null;						
 			while((line = br.readLine()) != null) {
 				String []  tokens = line.split(",");				
 				try {
 					if(processes.contains(tokens[2].trim())) data.add(tokens[0].trim() + "," + tokens[1].trim() + "," + tokens[2].trim() + "," + tokens[3].trim());
-					line_number++;
-				} catch (Exception e) {
-					System.out.println(line_number + "  " + line);	
-					e.printStackTrace();
-				}
+				} catch (Exception e) {}
 			}
 			br.close();
 			
 			FileWriter writer;
 			BufferedWriter bufferedWriter;
 			
-			String filename = null;
-			
-			if(i < 10) filename = "0" + i + ".csv";
-			else filename = i + ".csv";
-			
+			String filename = (i < 10)?  "0" + i + ".csv" : i + ".csv";
 			try {
 				writer = new FileWriter(new File(System.getProperty("user.home") + "/Desktop/DATA-FILTERED" ,filename));
 				bufferedWriter = new BufferedWriter(writer);
@@ -53,7 +49,7 @@ public class DataDelimeter {
 				}
 				
 				bufferedWriter.close();
-				System.out.println(filename + "  DONE = " + data.size());
+				System.out.println(filename + "  done! " + data.size());
 
 			} catch(IOException e1) {
 				e1.printStackTrace();
