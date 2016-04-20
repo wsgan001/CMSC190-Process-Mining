@@ -1,0 +1,481 @@
+t_basic_student_info
+enlist_with_nstp_filter
+search_student
+admin_update_password
+get_student_problems
+get_student_info
+send_problem
+has_finalized
+toggle_straggler
+get_roles
+login
+get_course_offerings
+get_checklist
+create_student_account
+search_course_offerings
+ 121.54.54.169
+update_email
+change_role
+get_recommended_courses
+logout
+get_classlist
+is_straggler
+get_ps_form
+10.12.108.94
+get_waitlisted_courses
+ 121.54.54.236
+get_section_info
+get_basic_student_info
+update_role
+enlist_with_nstp_filter
+admin_update_password
+get_student_problems
+get_student_info
+ 202.92.144.252
+send_problem
+has_finalized
+toggle_straggler
+ 121.54.54.173
+get_roles
+login
+get_course_offerings
+get_colleges
+get_checklist
+create_student_account
+search_course_offerings
+ 121.54.54.169
+ 121.54.54.168
+ 121.54.54.238
+update_email
+change_role
+logout
+get_recommended_courses
+get_classlist
+is_straggler
+get_ps_form
+get_waitlisted_courses
+get_section_info
+get_basic_student_info
+update_role
+get_waitlisted
+enlist_with_nstp_filter
+no
+admin_update_password
+get_student_info
+retrieve_all_module
+send_problem
+has_finalized
+ 121.54.54.170
+cancel_waitlist
+ 121.54.54.171
+ 121.54.54.172
+waitlist_with_nstp_filter
+ 121.54.54.248
+ 121.54.54.173
+create_announcement
+get_roles
+ 127.0.0.1
+finalize
+ 202.57.45.202
+login
+get_degrees
+get_curriculums
+toggle_site_status
+waitlist
+add_recommended_courses
+enlist
+search_course_offerings
+update_email
+ 121.54.54.238
+ 121.54.54.237
+get_recommended_courses
+ 121.54.54.239
+get_classlist
+add_student
+is_straggler
+change_allowed_units
+ 121.54.54.236
+add_slot_up_waitlist
+retrieve_all_menu
+search_student
+get_student_problems
+ 202.92.144.252
+toggle_straggler
+get_reserved
+ 121.54.54.11
+ monday. It's very very confusing for us
+cancel_corequisite
+PE _-%
+get_course_offerings
+get_problems
+ I discovered that my PS form is already finalized with only one subject. I did not do anything that may have resulted to this. I'm suppose to have four courses recommended
+49.150.204.9
+get_colleges
+ 121.54.54.250
+get_checklist
+cancel_slot
+create_student_account
+ 121.54.54.227
+ 121.54.54.169
+ 10.0.0.1
+ 121.54.54.168
+swap_section_with_nstp_filter
+change_role
+logout
+get_ps_form
+get_waitlisted_courses
+ 121.54.54.251
+add_role
+get_section_info
+get_basic_student_info
+get_waitlisted
+enlist_with_nstp_filter
+no
+admin_update_password
+get_student_problems
+get_student_info
+ 202.92.144.252
+send_problem
+has_finalized
+toggle_straggler
+cancel_waitlist
+get_reserved
+get_roles
+login
+get_course_offerings
+get_checklist
+create_student_account
+search_course_offerings
+update_email
+change_role
+get_recommended_courses
+logout
+get_classlist
+get_ps_form
+is_straggler
+get_waitlisted_courses
+get_section_info
+get_basic_student_info
+get_checklist
+create_student_account
+enlist_with_nstp_filter
+admin_update_password
+search_course_offerings
+get_student_info
+get_student_problems
+send_problem
+has_finalized
+update_email
+toggle_straggler
+change_role
+logout
+get_recommended_courses
+get_classlist
+get_ps_form
+is_straggler
+login
+get_waitlisted_courses
+get_course_offerings
+get_section_info
+get_basic_student_info
+enlist_with_nstp_filter
+no
+admin_update_password
+get_student_problems
+get_student_info
+ 202.92.144.252
+send_problem
+ 121.54.54.170
+has_finalized
+toggle_straggler
+cancel_waitlist
+ 121.54.54.172
+get_roles
+login
+PE _-%
+get_course_offerings
+ 121.54.54.250
+get_checklist
+create_student_account
+search_course_offerings
+update_email
+change_role
+logout
+get_recommended_courses
+get_classlist
+is_straggler
+get_ps_form
+get_waitlisted_courses
+get_section_info
+get_basic_student_info
+enlist_with_nstp_filter
+no
+admin_update_password
+get_student_problems
+get_student_info
+ 202.92.144.252
+send_problem
+has_finalized
+toggle_straggler
+get_reserved
+get_roles
+login
+get_degrees
+get_course_offerings
+get_curriculums
+get_checklist
+create_student_account
+search_course_offerings
+update_email
+change_role
+get_recommended_courses
+logout
+get_classlist
+add_student
+is_straggler
+get_ps_form
+get_waitlisted_courses
+get_section_info
+get_basic_student_info
+update_role
+retrieve_all_menu
+enlist_with_nstp_filter
+no
+admin_update_password
+get_student_problems
+get_student_info
+ plano ko sana i-retake sya ngayong mid year kaso wala siya sa recommended courses ko. Salamat!
+ 202.92.144.252
+send_problem
+has_finalized
+cancel_waitlist
+toggle_straggler
+ 192.168.0.63
+create_announcement
+get_roles
+finalize
+ 127.0.0.1
+login
+get_course_offerings
+get_curriculums
+get_checklist
+create_student_account
+add_recommended_courses
+enlist
+search_course_offerings
+update_email
+change_role
+get_recommended_courses
+logout
+get_classlist
+ I'm graduating. Huhu thankyouuu!! <3
+is_straggler
+get_ps_form
+get_waitlisted_courses
+get_section_info
+get_basic_student_info
+enlist_with_nstp_filter
+search_student
+admin_update_password
+get_student_problems
+get_student_info
+send_problem
+has_finalized
+cancel_waitlist
+toggle_straggler
+get_roles
+finalize
+login
+get_course_offerings
+get_curriculums
+get_colleges
+get_checklist
+create_student_account
+add_recommended_courses
+search_course_offerings
+update_email
+change_role
+logout
+get_recommended_courses
+get_classlist
+is_straggler
+get_ps_form
+get_waitlisted_courses
+add_role
+get_section_info
+get_basic_student_info
+202.92.144.252
+get_waitlisted
+enlist_with_nstp_filter
+admin_update_password
+get_student_info
+get_student_problems
+ 202.92.144.252
+141.0.12.211
+has_finalized
+get_reserved
+get_roles
+login
+get_course_offerings
+get_curriculums
+get_colleges
+get_checklist
+create_student_account
+search_course_offerings
+change_role
+get_recommended_courses
+logout
+get_classlist
+get_ps_form
+get_waitlisted_courses
+get_section_info
+202.92.144.252
+get_checklist
+create_student_account
+admin_update_password
+search_course_offerings
+get_student_info
+get_student_problems
+send_problem
+update_email
+has_finalized
+change_role
+get_recommended_courses
+logout
+get_classlist
+get_roles
+get_ps_form
+login
+get_waitlisted_courses
+add_role
+get_problems
+get_section_info
+get_course_offerings
+get_basic_student_info
+202.92.144.252
+get_checklist
+create_student_account
+enlist_with_nstp_filter
+admin_update_password
+search_course_offerings
+get_student_info
+get_student_problems
+ 202.92.144.252
+send_problem
+has_finalized
+update_email
+change_role
+get_recommended_courses
+logout
+get_classlist
+get_roles
+finalize
+get_ps_form
+login
+get_waitlisted_courses
+get_course_offerings
+get_section_info
+get_basic_student_info
+update_role
+get_waitlisted
+retrieve_all_menu
+enlist_with_nstp_filter
+search_student
+admin_update_password
+get_student_problems
+get_student_info
+retrieve_all_module
+ 202.92.144.252
+send_problem
+has_finalized
+toggle_straggler
+get_reserved
+get_roles
+ 172.16.4.0
+login
+get_degrees
+get_course_offerings
+get_problems
+get_curriculums
+get_colleges
+get_checklist
+create_student_account
+toggle_site_status
+search_course_offerings
+update_email
+change_role
+get_recommended_courses
+logout
+get_classlist
+add_student
+is_straggler
+get_ps_form
+retrieve_menu_by_id
+get_waitlisted_courses
+get_section_info
+get_basic_student_info
+get_waitlisted
+enlist_with_nstp_filter
+no
+admin_update_password
+search_student
+ 172.16.20.1
+get_student_info
+get_student_problems
+ 202.92.144.252
+send_problem
+has_finalized
+toggle_straggler
+get_reserved
+get_roles
+finalize
+login
+get_degrees
+get_problems
+get_course_offerings
+get_curriculums
+ 172.16.6.1
+get_colleges
+get_checklist
+create_student_account
+enlist
+search_course_offerings
+update_email
+change_role
+logout
+get_recommended_courses
+get_classlist
+add_student
+get_ps_form
+get_waitlisted_courses
+change_allowed_units
+get_section_info
+get_basic_student_info
+retrieve_all_menu
+enlist_with_nstp_filter
+no
+search_student
+admin_update_password
+get_student_info
+get_student_problems
+ 202.92.144.252
+retrieve_all_module
+send_problem
+has_finalized
+get_roles
+ 127.0.0.1
+login
+get_degrees
+get_course_offerings
+get_problems
+get_checklist
+create_student_account
+search_course_offerings
+update_email
+change_role
+get_recommended_courses
+logout
+get_classlist
+get_ps_form
+get_waitlisted_courses
+get_section_info

@@ -11,8 +11,8 @@ public class ProcessCounter {
 			HashMap<String, Integer> map = new HashMap<String, Integer>();
 			
 			File file_path;
-	 		if(i < 10) file_path = new File(System.getProperty("user.home") + "/Desktop/DATA/DATA FILTERED/0" + i + ".csv");
-	 		else file_path = new File(System.getProperty("user.home") + "/Desktop/DATA/DATA FILTERED/" + i + ".csv");
+	 		if(i < 10) file_path = new File(System.getProperty("user.home") + "/Desktop/DATA-FILTERED/0" + i + ".csv");
+	 		else file_path = new File(System.getProperty("user.home") + "/Desktop/DATA-FILTERED/" + i + ".csv");
 	 		
 			BufferedReader br = new BufferedReader(new FileReader(file_path));
 			
@@ -37,7 +37,7 @@ public class ProcessCounter {
 
 			while(keySetIterator.hasNext()){
 			  String key = keySetIterator.next();			  
-			  System.out.println(key + " " + map.get(key));			
+			  System.out.println(key);
 			}
 			
 			System.out.println("==================================================");			

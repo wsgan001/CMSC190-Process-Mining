@@ -104,6 +104,19 @@ public class LineFilter {
 				
 				int counter = 1;
 				int number_of_data_to_remove = (int) (temp.size() * percentage_to_trim);
+				
+//				System.out.println("==================================");
+//				System.out.println(file_path.getName());
+//				System.out.println("DATA POINTS: " + temp.size());
+//				System.out.println("DATA POINTS TO REMOVE: " + number_of_data_to_remove);
+//				System.out.println("==================================\n");
+				
+//				SIZE
+//				System.out.println(temp.size());
+				
+//				NUMBER OF DATA POINTS TO REMOVE
+//				System.out.println(number_of_data_to_remove);
+				
 				while(counter <= number_of_data_to_remove) {
 					int index_to_remove = (int) (Math.random()*temp.size());
 					temp.remove(index_to_remove);
@@ -117,6 +130,8 @@ public class LineFilter {
 				continue;
 			}
 		}
+		
+		System.exit(0);
 		
 		ArrayList<Integer> key = new ArrayList<Integer>(map.keySet());
 		Collections.sort(key);

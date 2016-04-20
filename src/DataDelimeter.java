@@ -5,15 +5,18 @@ import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class DataDelimeter {
 	public DataDelimeter() throws IOException {
+		ArrayList<String> processes = new ArrayList<String>(Arrays.asList("get_basic_student_info","update_role","get_waitlisted","enlist_with_nstp_filter","admin_update_password","get_student_info","retrieve_all_module","send_problem","has_finalized","cancel_waitlist","waitlist_with_nstp_filter","create_announcement","get_roles","finalize","login","get_degrees","get_curriculums","toggle_site_status","waitlist","add_recommended_courses","enlist","search_course_offerings","update_email","get_recommended_courses","get_classlist","add_student","is_straggler","retrieve_menu_by_id","change_allowed_units","add_slot_up_waitlist","retrieve_all_menu","search_student","get_student_problems","toggle_straggler","get_reserved","cancel_corequisite","get_problems","get_course_offerings","get_colleges","get_checklist","cancel_slot","create_student_account","swap_section_with_nstp_filter","change_role","logout","get_ps_form","get_waitlisted_courses","add_role","get_section_info"));
+		
 		for(int i = 1; i<=15; i++) {
 			ArrayList<String> data = new ArrayList<String>();
 			
 			File file_path;
-	 		if(i < 10) file_path = new File(System.getProperty("user.home") + "/Desktop/DATA/DATA FILTERED/0" + i + ".csv");
-	 		else file_path = new File(System.getProperty("user.home") + "/Desktop/DATA/DATA FILTERED/" + i + ".csv");
+	 		if(i < 10) file_path = new File(System.getProperty("user.home") + "/Desktop/DATA-TO-FILTER/0" + i + ".csv");
+	 		else file_path = new File(System.getProperty("user.home") + "/Desktop/DATA-TO-FILTER/" + i + ".csv");
 	 		
 			BufferedReader br = new BufferedReader(new FileReader(file_path));
 			
@@ -23,86 +26,11 @@ public class DataDelimeter {
 			while((line = br.readLine()) != null) {
 				String []  tokens = line.split(",");				
 				try {
-					if(
-						(i == 3) &&
-						(
-							!("no".equals(tokens[2].trim())) &&  !("121.54.54.170".equals(tokens[2].trim())) &&
-							!("121.54.54.171".equals(tokens[2].trim())) &&  !("121.54.54.172".equals(tokens[2].trim())) &&
-							!("121.54.54.248".equals(tokens[2].trim())) &&  !("121.54.54.173".equals(tokens[2].trim())) &&
-							!("127.0.0.1".equals(tokens[2].trim())) &&  !("202.57.45.202".equals(tokens[2].trim())) &&
-							!("proceed to your respective OCS (except CAS".equals(tokens[2].trim())) &&  !("ALL".equals(tokens[2].trim())) &&
-							!("121.54.54.238".equals(tokens[2].trim())) &&  !("your mini-checklist should reflect the changes that you specified in your plan of study or in your GE plan provided that they were submitted on or before the set deadline.<br/><br/>".equals(tokens[2].trim())) &&
-							!("121.54.54.237".equals(tokens[2].trim())) &&  !("121.54.54.239".equals(tokens[2].trim())) &&
-							!("121.54.54.236".equals(tokens[2].trim())) &&  !("202.92.144.252".equals(tokens[2].trim())) &&
-							!("121.54.54.11".equals(tokens[2].trim())) &&  !("49.150.204.9".equals(tokens[2].trim())) &&
-							!("121.54.54.250".equals(tokens[2].trim())) &&  !("121.54.54.227".equals(tokens[2].trim())) &&
-							!("get_recommended7:22:59".equals(tokens[2].trim())) &&  !("121.54.54.169".equals(tokens[2].trim())) &&
-							!("10.0.0.1".equals(tokens[2].trim())) &&  !("121.54.54.168".equals(tokens[2].trim())) &&
-							!("and swap starting 9AM on January 19 (Mon). The online registration will end at 12NN on January 23 (Friday). The SystemOne DevTeam MIGHT enable Stragglers Time this semester; we will update the mechanics within the week of the online registration.".equals(tokens[2].trim())) &&  !("121.54.54.251".equals(tokens[2].trim()))
-						)
-					   ) data.add(tokens[0] + "," + tokens[1] + "," + tokens[2] + "," + tokens[3]);
-					
-					else if(
-							(i == 6) &&
-							(
-								!("121.54.54.174".equals(tokens[2].trim())) &&  !("202.92.144.252".equals(tokens[2].trim())) &&
-								!("121.54.54.170".equals(tokens[2].trim())) &&  !("121.54.54.172".equals(tokens[2].trim())) &&
-								!("PE _-%".equals(tokens[2].trim())) &&  !("121.54.54.250".equals(tokens[2].trim())) &&
-								!("Problem sent.".equals(tokens[2].trim()))
-							)
-						   ) data.add(tokens[0] + "," + tokens[1] + "," + tokens[2] + "," + tokens[3]);
-					
-					else if(
-							(i == 8) &&
-							(
-								!("plano ko sana i-retake sya ngayong mid year kaso wala siya sa recommended courses ko. Salamat!".equals(tokens[2].trim())) &&  !("202.92.144.252".equals(tokens[2].trim())) &&
-								!("192.168.0.63".equals(tokens[2].trim())) &&  !("127.0.0.1".equals(tokens[2].trim()))
-							)
-						   ) data.add(tokens[0] + "," + tokens[1] + "," + tokens[2] + "," + tokens[3]);
-					
-					else if(
-							(i == 10) &&
-							(
-								!("202.92.144.252".equals(tokens[2].trim())) &&  !("141.0.12.211".equals(tokens[2].trim()))
-							)
-						   ) data.add(tokens[0] + "," + tokens[1] + "," + tokens[2] + "," + tokens[3]);
-							
-					else if(
-							(i == 11 || i == 12 || i == 7) &&
-							(
-								!("202.92.144.252".equals(tokens[2].trim()))
-							)
-						   ) data.add(tokens[0] + "," + tokens[1] + "," + tokens[2] + "," + tokens[3]);
-					
-					else if(
-							(i == 13) &&
-							(
-								!("202.92.144.252".equals(tokens[2].trim())) &&  !("172.16.4.0".equals(tokens[2].trim())) &&
-								!("PE _-%".equals(tokens[2].trim())) &&  !("Problem sent.".equals(tokens[2].trim()))
-							)
-						   ) data.add(tokens[0] + "," + tokens[1] + "," + tokens[2] + "," + tokens[3]);
-					
-					else if(
-							(i == 14) &&
-							(
-								!("172.16.20.1".equals(tokens[2].trim())) &&  !("202.92.144.252".equals(tokens[2].trim())) &&
-								!("172.16.6.1".equals(tokens[2].trim()))
-							)
-						   ) data.add(tokens[0] + "," + tokens[1] + "," + tokens[2] + "," + tokens[3]);
-					
-					else if(
-							(i == 15) &&
-							(
-								!("127.0.0.1".equals(tokens[2].trim())) &&  !("202.92.144.252".equals(tokens[2].trim()))
-							)
-						   ) data.add(tokens[0] + "," + tokens[1] + "," + tokens[2] + "," + tokens[3]);
-					
-					else data.add(tokens[0] + "," + tokens[1] + "," + tokens[2] + "," + tokens[3]);
-					
+					if(processes.contains(tokens[2].trim())) data.add(tokens[0].trim() + "," + tokens[1].trim() + "," + tokens[2].trim() + "," + tokens[3].trim());
 					line_number++;
-			} catch (Exception e) {
-				System.out.println(line_number + "  " + line);	
-				e.printStackTrace();
+				} catch (Exception e) {
+					System.out.println(line_number + "  " + line);	
+					e.printStackTrace();
 				}
 			}
 			br.close();
@@ -116,7 +44,7 @@ public class DataDelimeter {
 			else filename = i + ".csv";
 			
 			try {
-				writer = new FileWriter(filename);
+				writer = new FileWriter(new File(System.getProperty("user.home") + "/Desktop/DATA-FILTERED" ,filename));
 				bufferedWriter = new BufferedWriter(writer);
 				
 				for(int i1 = 0; i1<data.size(); i1++) {
@@ -125,12 +53,11 @@ public class DataDelimeter {
 				}
 				
 				bufferedWriter.close();
-				System.out.println(filename + "  DONE");
+				System.out.println(filename + "  DONE = " + data.size());
 
 			} catch(IOException e1) {
 				e1.printStackTrace();
 			}
-			
 		}
 	}
 
