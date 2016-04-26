@@ -10,8 +10,10 @@ import java.util.Collections;
 import java.util.HashMap;
 
 public class LineFilter {
-	public LineFilter() throws IOException {
-		double percentage_to_trim = 0.60;
+	double percentage_to_trim;
+	
+	public LineFilter(double percent) throws IOException {
+		this.percentage_to_trim = percent;
 		ArrayList<RawData> files = new ArrayList<RawData>(Arrays.asList(new RawData("2014 11 (NOVEMBER)", 2014, 11, "01.csv"),
 																		new RawData("2014 12 (DECEMBER)", 2014, 12, "02.csv"),
 																		new RawData("2015 01 (JANUARY)", 2015, 1, "03.csv"),
@@ -47,7 +49,7 @@ public class LineFilter {
 					}
 					
 					int counter = 1;
-					int number_of_data_to_remove = (int) (temp.size() * percentage_to_trim);
+					int number_of_data_to_remove = (int) (temp.size() * this.percentage_to_trim);
 
 					while(counter <= number_of_data_to_remove) {
 						int index_to_remove = (int) (Math.random()*temp.size());
@@ -88,15 +90,11 @@ public class LineFilter {
 					
 				bufferedWriter.close();
 				
-				System.out.println(file.output_filename + " has been saved! " + data.size());
+				System.out.println( "[LINE FILTER] " + file.output_filename + " has been saved! " + data.size());
 				
 			} catch(IOException e) {
 //				e.printStackTrace();
 			}
 		}		
-	}
-	
-	public static void main(String[] args) throws IOException {
-		new LineFilter();
 	}
 }

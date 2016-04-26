@@ -7,6 +7,8 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 public class DataStitcher {
+	int total_data = 0;
+	
 	public DataStitcher() throws IOException {
 		int no_of_files = 15;
 		
@@ -14,8 +16,8 @@ public class DataStitcher {
 			ArrayList<String> data = new ArrayList<String>();
 			
 			File file_path;
-	 		if(i < 10) file_path = new File(System.getProperty("user.home") + "/Desktop/DATA-TO-STITCH/0" + i + ".csv");
-	 		else file_path = new File(System.getProperty("user.home") + "/Desktop/DATA-TO-STITCH/" + i + ".csv");
+	 		if(i < 10) file_path = new File(System.getProperty("user.home") + "/Desktop/DATA-FILTERED/0" + i + ".csv");
+	 		else file_path = new File(System.getProperty("user.home") + "/Desktop/DATA-FILTERED/" + i + ".csv");
 	 		
 			BufferedReader br = new BufferedReader(new FileReader(file_path));
 			
@@ -43,13 +45,14 @@ public class DataStitcher {
 			
 			bufferedWriter.close();
 			
+			total_data += data.size();
+			
 			System.out.println(file_path.getName() + " has been stiched to data.csv.");
 		}
 		
 		System.out.println("Stitching Complete!");
-	}
-	
-	public static void main(String[] args) throws IOException {
-		new DataStitcher();
+		System.out.println("Total Data: " + total_data);
+		System.out.println("70% of Total Data: " + (total_data*0.7));
+		System.out.println("30% of Total Data: " + (total_data*0.3));
 	}
 }

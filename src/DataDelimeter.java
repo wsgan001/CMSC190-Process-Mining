@@ -49,15 +49,11 @@ public class DataDelimeter {
 				}
 				
 				bufferedWriter.close();
-				System.out.println(filename + "  done! " + data.size());
+				System.out.println("[DATA DELIMETER] " + filename +  " has been saved! "  + data.size());
 
 			} catch(IOException e1) {
 				e1.printStackTrace();
 			}
 		}
-	}
-
-	public static void main(String[] args) throws IOException {
-		new DataDelimeter();
 	}
 }
