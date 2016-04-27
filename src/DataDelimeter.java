@@ -9,6 +9,7 @@ import java.util.Arrays;
 
 public class DataDelimeter {
 	public DataDelimeter() throws IOException {
+		int no_of_files = 15;
 		ArrayList<String> processes = new ArrayList<String>(Arrays.asList("get_basic_student_info","update_role","get_waitlisted","enlist_with_nstp_filter","admin_update_password","get_student_info",
 																		  "retrieve_all_module","send_problem","has_finalized","cancel_waitlist","waitlist_with_nstp_filter","create_announcement","get_roles",
 																		  "finalize","login","get_degrees","get_curriculums","toggle_site_status","waitlist","add_recommended_courses","enlist","search_course_offerings",
@@ -17,7 +18,7 @@ public class DataDelimeter {
 																		  "get_problems","get_course_offerings","get_colleges","get_checklist","cancel_slot","create_student_account","swap_section_with_nstp_filter",
 																		  "change_role","logout","get_ps_form","get_waitlisted_courses","add_role","get_section_info"));
 		
-		for(int i = 1; i<=15; i++) {
+		for(int i = 1; i<=no_of_files; i++) {
 			ArrayList<String> data = new ArrayList<String>();
 			
 			File file_path;
