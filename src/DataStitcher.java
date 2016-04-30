@@ -10,7 +10,7 @@ public class DataStitcher {
 	int total_data = 0;
 	
 	public DataStitcher() throws IOException {
-		int no_of_files = 15;
+		int no_of_files = 4;
 		
 		for(int i = 1; i<=no_of_files; i++) {
 			ArrayList<String> data = new ArrayList<String>();
